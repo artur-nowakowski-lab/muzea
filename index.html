@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Muzeów w Polsce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-size: 12px;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr.museum-item:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr.museum-item:hover {
+            background-color: #e8f4f8;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            color: #333;
+            border-radius: 4px;
+        }
+        .pagination a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .pagination .current {
+            background-color: #3498db;
+            color: white;
+        }
+        .stats {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Katalog Muzeów w Polsce</h1>
+        
+        <div class="stats">
+            <strong>Statystyki:</strong> W katalogu znajduje się 1040 muzeów z całej Polski. 
+            Dane obejmują muzea państwowe, samorządowe, prywatne oraz prowadzone przez fundacje i stowarzyszenia.
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="museum-lp">Lp.</th>
+                    <th class="museum-name">Nazwa muzeum</th>
+                    <th class="museum-postal-code">Kod pocztowy</th>
+                    <th class="museum-city">Miejscowość</th>
+                    <th class="museum-commune">Gmina</th>
+                    <th class="museum-county">Powiat</th>
+                    <th class="museum-region">Województwo</th>
+                    <th class="museum-address">Adres</th>
+                    <th class="museum-additional-address">Adres dodatkowy</th>
+                    <th class="museum-organizers">Organizator</th>
+                    <th class="museum-registry-date">Data wpisu</th>
+                    <th class="museum-status">Status</th>
+                    <th class="museum-deregistration-date">Data wykreślenia</th>
+                    <th class="museum-organization-completion">Zakończenie procesu</th>
+                    <th class="museum-extra-info">Dodatkowe info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="museum-item">
+                    <td class="museum-lp">1</td>
+                    <td class="museum-name">Centralne Muzeum Pożarnictwa w Mysłowicach</td>
+                    <td class="museum-postal-code">41-400</td>
+                    <td class="museum-city">Mysłowice</td>
+                    <td class="museum-commune">Mysłowice</td>
+                    <td class="museum-county">m. Mysłowice</td>
+                    <td class="museum-region">ŚLĄSKIE</td>
+                    <td class="museum-address">ul. Stadionowa 7a</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Państwowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">2</td>
+                    <td class="museum-name">Centralne Muzeum Włókiennictwa w Łodzi</td>
+                    <td class="museum-postal-code">93-034</td>
+                    <td class="museum-city">Łódź</td>
+                    <td class="museum-commune">Łódź (Łódź-Górna)</td>
+                    <td class="museum-county">m. Łódź</td>
+                    <td class="museum-region">ŁÓDZKIE</td>
+                    <td class="museum-address">ul. Piotrkowska 282</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status">2013-06-28</td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">3</td>
+                    <td class="museum-name">Muzeum Pogranicza w Działdowie</td>
+                    <td class="museum-postal-code">13-200</td>
+                    <td class="museum-city">Działdowo</td>
+                    <td class="museum-commune">Działdowo</td>
+                    <td class="museum-county">działdowski</td>
+                    <td class="museum-region">WARMIŃSKO-MAZURSKIE</td>
+                    <td class="museum-address">ul. Mickiewicza 43</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">4</td>
+                    <td class="museum-name">Lubuskie Muzeum Wojskowe w Zielonej Górze z siedzibą w
+  Drzonowie</td>
+                    <td class="museum-postal-code">66-008</td>
+                    <td class="museum-city">Świdnica</td>
+                    <td class="museum-commune">Świdnica</td>
+                    <td class="museum-county">zielonogórski</td>
+                    <td class="museum-region">LUBUSKIE</td>
+                    <td class="museum-address">ul. Drzonów 54</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status">1998-07-06</td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">5</td>
+                    <td class="museum-name">Miejskie Muzeum Zabawek ze zbiorów Henryka Tomaszewskiego</td>
+                    <td class="museum-postal-code">58-540</td>
+                    <td class="museum-city">Karpacz</td>
+                    <td class="museum-commune">Karpacz</td>
+                    <td class="museum-county">jeleniogórski</td>
+                    <td class="museum-region">DOLNOŚLĄSKIE</td>
+                    <td class="museum-address">ul. Kolejowa 3</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">6</td>
+                    <td class="museum-name">Międzyrzecki Rejon Umocniony - Muzeum Fortyfikacji i
+  Nietoperzy w Pniewie</td>
+                    <td class="museum-postal-code">66-300</td>
+                    <td class="museum-city">Międzyrzecz</td>
+                    <td class="museum-commune">Międzyrzecz</td>
+                    <td class="museum-county">międzyrzecki</td>
+                    <td class="museum-region">LUBUSKIE</td>
+                    <td class="museum-address">ul. Pniewo 1</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">7</td>
+                    <td class="museum-name">Muzeum Czartoryskich w Puławach</td>
+                    <td class="museum-postal-code">24-100</td>
+                    <td class="museum-city">Puławy</td>
+                    <td class="museum-commune">Góra Puławska</td>
+                    <td class="museum-county">puławski</td>
+                    <td class="museum-region">LUBELSKIE</td>
+                    <td class="museum-address">ul. Czartoryskich 8</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">8</td>
+                    <td class="museum-name">Muzeum „Górnośląski Park Etnograficzny w Chorzowie”</td>
+                    <td class="museum-postal-code">41-500</td>
+                    <td class="museum-city">Chorzów</td>
+                    <td class="museum-commune">Chorzów</td>
+                    <td class="museum-county">m. Chorzów</td>
+                    <td class="museum-region">ŚLĄSKIE</td>
+                    <td class="museum-address">ul. Parkowa 25</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status">2017-12-28</td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">9</td>
+                    <td class="museum-name">Muzeum Archeologiczne w Biskupinie</td>
+                    <td class="museum-postal-code">88-410</td>
+                    <td class="museum-city">Gąsawa</td>
+                    <td class="museum-commune">Gąsawa</td>
+                    <td class="museum-county">żniński</td>
+                    <td class="museum-region">KUJAWSKO-POMORSKIE</td>
+                    <td class="museum-address">ul. Biskupin 17</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+                <tr class="museum-item">
+                    <td class="museum-lp">10</td>
+                    <td class="museum-name">Muzeum Archeologiczne w Gdańsku</td>
+                    <td class="museum-postal-code">80-833</td>
+                    <td class="museum-city">Gdańsk</td>
+                    <td class="museum-commune">Gdańsk</td>
+                    <td class="museum-county">m. Gdańsk</td>
+                    <td class="museum-region">POMORSKIE</td>
+                    <td class="museum-address">ul. Mariacka 25</td>
+                    <td class="museum-additional-address"></td>
+                    <td class="museum-organizers"></td>
+                    <td class="museum-registry-date"></td>
+                    <td class="museum-status"></td>
+                    <td class="museum-deregistration-date">Samorządowe</td>
+                    <td class="museum-organization-completion"></td>
+                    <td class="museum-extra-info"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pagination"><a href="index.html" class="current">1</a><a href="page2.html">2</a><a href="page3.html">3</a><a href="page4.html">4</a><a href="page5.html">5</a><a href="page2.html">Następna ></a></div>
+    </div>
+</body>
+</html>
